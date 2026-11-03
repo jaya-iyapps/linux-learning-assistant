@@ -1,0 +1,36 @@
+
+# Command|Category|Description|Syntax|Examples
+
+pwd|File Management|Displays the current working directory.|pwd|pwd
+ls|File Management|Lists files and directories including hidden files and detailed information.|ls [options] [directory]|ls; ls -l; ls -a; ls -la; ls -i; ls -lah
+cd|File Management|Changes the current working directory.|cd [directory]|cd Documents; cd ..; cd ~
+mkdir|File Management|Creates new directories.|mkdir [options] [directory_name]|mkdir practice; mkdir -p projects/test
+touch|File Management|Creates an empty file or updates its timestamp.|touch [file_name]|touch notes.txt; touch file1.txt file2.txt
+cp|File Management|Copies files or directories.|cp [options] [source] [destination]|cp notes.txt backup.txt; cp -r folder backup
+mv|File Management|Moves or renames files and directories.|mv [source] [destination]|mv old.txt new.txt; mv notes.txt Documents/
+rm|File Management|Removes files and directories.|rm [options] [file_name]|rm notes.txt; rm -r folder
+
+cat|File Viewing|Displays file contents.|cat [options] [file_name]|cat notes.txt; cat -n notes.txt
+head|File Viewing|Displays the first lines of a file.|head [options] [file_name]|head notes.txt; head -n 5 notes.txt
+tail|File Viewing|Displays the last lines of a file.|tail [options] [file_name]|tail notes.txt; tail -n 5 notes.txt; tail -f app.log
+less|File Viewing|Displays file contents one screen at a time.|less [file_name]|less notes.txt
+
+uname|System Information|Displays operating system and kernel information.|uname [options]|uname; uname -a; uname -srm
+date|System Information|Displays the current date and time.|date [options]|date; date "+%Y-%m-%d"
+uptime|System Information|Displays how long the system has been running.|uptime; uptime -p
+df|System Information|Displays filesystem disk space usage.|df [options]|df -h; df -T
+free|System Information|Displays memory usage information.|free [options]|free -h; free -m
+
+whoami|User Information|Displays the current username.|whoami|whoami
+id|User Information|Displays user and group identification information.|id [username]|id; id username
+hostname|User Information|Displays the system hostname.|hostname [options]|hostname; hostname -I
+
+grep|Searching and Filtering|Searches for matching text inside files.|grep [options] [pattern] [file]|grep error system.log; grep -i error app.log; grep -n error app.log; grep -o word notes.txt; grep -F hello notes.txt
+find|Searching and Filtering|Searches for files and directories.|find [path] [options]|find . -name notes.txt; find . -type f; find . -type d
+sort|Searching and Filtering|Sorts lines in a file.|sort [options] [file_name]|sort names.txt; sort -r names.txt; sort -n numbers.txt
+wc|Searching and Filtering|Counts lines words and characters in files.|wc [options] [file_name]|wc notes.txt; wc -l notes.txt; wc -w notes.txt; wc -c notes.txt
+
+ps|Process Management|Displays information about running processes.|ps [options]|ps; ps aux; ps -ef
+top|Process Management|Displays live system process information.|top [options]|top
+pgrep|Process Management|Finds process IDs using process names.|pgrep [options] [process_name]|pgrep bash; pgrep -a bash
+kill|Process Management|Sends a signal to a running process.|kill [options] [PID]|kill -TERM 1234; kill -l
