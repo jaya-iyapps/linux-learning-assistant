@@ -1,0 +1,10 @@
+# Personal learning data
+/data/progress.txt
+
+# Practice workspace contents
+/workspace/*
+!/workspace/.gitkeep
+
+# Temporary files
+*.tmp
+*.log
