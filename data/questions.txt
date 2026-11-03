@@ -1,0 +1,13 @@
+# Format:
+# Question|Option A|Option B|Option C|Option D|Correct option|Explanation
+
+Which command displays the current working directory?|ls|pwd|cd|mkdir|B|pwd displays the present working directory.
+Which option displays hidden files using ls?|-l|-h|-a|-t|C|The -a option displays hidden files.
+Which command creates an empty file?|mkdir|cp|touch|mv|C|touch creates an empty file.
+Which command copies files?|mv|cp|rm|cat|B|cp copies files from one location to another.
+Which command displays the first lines of a file?|tail|head|grep|sort|B|head displays the first lines of a file.
+Which command searches for matching text inside a file?|grep|wc|pwd|date|A|grep searches for matching text.
+Which command displays memory usage in human-readable format?|df -h|free -h|uptime|whoami|B|free -h displays memory usage in human-readable units.
+Which command displays filesystem disk usage?|free|du -h|df -h|ps|C|df -h displays filesystem disk space usage.
+Which command displays the current username?|uname|hostname|whoami|id|C|whoami displays the current username.
+Which command changes the current directory?|ls|cd|pwd|touch|B|cd changes the current working directory.
